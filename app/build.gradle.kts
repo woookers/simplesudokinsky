@@ -21,10 +21,7 @@ android {
 
     buildTypes {
         release {
-            optimization {
-                enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
-            }
+            // Remove experimental optimization block causing startup crashes
         }
     }
     compileOptions {
